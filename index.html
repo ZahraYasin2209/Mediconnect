@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediConnect</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <style>
+        body {
+            background-color: rgb(165, 220, 255);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            background-color: rgba(62, 143, 201, 0.9);
+            padding: 30px;
+            border-radius: 25px;
+            border: 14px solid rgb(188, 186, 186);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 850px;
+            height: 500px;
+        }
+
+        .header {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .header h6 {
+            color: white;
+            font-weight: 600;
+        }
+
+        .header #head1 {
+            font-weight: 700;
+            font-size: 35px;
+        }
+
+        .doctor-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            object-fit: cover;
+            border: 3px solid #b9c0c8;
+            position: relative;
+            bottom: 60px;
+        }
+
+        .btn {
+            width: 150px;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 25px;
+            font-size: 1.2em;
+            font-weight: 500;
+            position: relative;
+            bottom: 110px;
+        }
+
+        .btn-primary {
+            background-color: #175597;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #576c82;
+        }
+
+        .pic {
+            position: relative;
+            bottom: 92.5px;
+            right: 29.5px;
+            border-radius: 20px;
+        }
+
+        .medicine {
+            width: 821px;
+            height: 165px;
+        }
+
+        #tablet {
+            position: relative;
+            bottom: 530px;
+            left: 280px;
+            border-radius: 15px;
+            width: 190px;
+            height: 150px;
+        }
+
+        .kit {
+            position: relative;
+            bottom: 650px;
+            right: 290px;
+            border-radius: 15px;
+            width: 190px;
+            height: 160px;
+        }
+
+        .ecg {
+            position: relative;
+            bottom: 710px;
+            left: 280px;
+            border-radius: 15px;
+            width: 170px;
+            height: 60px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h6>Welcome to<br><span id="head1">MediConnect</span></h6>
+        </div>
+        <img src="images/doctor.webp" alt="Doctor" class="doctor-image">
+        <div>
+            <a href="Login.html" class="btn btn-primary">Login</a>
+            <a href="SignUp.html" class="btn btn-primary">SignUp</a>
+        </div>
+        <div class="pic">
+            <img src="images/div.PNG" alt="Doctor" class="medicine">
+        </div> 
+        <div>
+            <img src="images/stethoscope.png" alt="Doctor" id="tablet">
+        </div>
+        <div>
+            <img src="images/med-box.png" alt="Medical Kit" class="kit">
+        </div>
+        <div>
+            <img src="images/ecg.png" alt="ECG" class="ecg">
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

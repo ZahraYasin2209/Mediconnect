@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SignUp - MediConnect</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('images/pic.webp'); /* Ensure this path is correct */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .signup-container {
+            max-width: 450px;
+            padding: 33px;
+            max-height: 600px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            background-color: rgba(255, 255, 255, 0.9);
+            padding-top: 22px;
+        }
+
+        .form-group {
+            margin-bottom: 14px; /* Decreased spacing */
+        }
+
+        .btn-signup {
+            background-color: #17a2b8;
+            border-color: #17a2b8;
+            color: white;
+            transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+        }
+
+        .btn-signup:hover {
+            background-color: #138496;
+            border-color: #138496;
+            color: white;
+        }
+
+        .signup-link {
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
+            font-size: 16px;
+        }
+
+        .signup-link a {
+            color: #138192;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .signup-link a:hover {
+            color: #107887;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #17a2b8;
+            font-weight: bold;
+            font-size: 28px;
+        }
+
+        a {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container signup-container">
+        <h2>SignUp - MediConnect</h2>
+        <form action="SignUpServlet" method="POST">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" class="form-control" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
+            </div>
+            <div class="form-group">
+                <label for="role">Role:</label>
+                <select class="form-control" id="role" name="role" required>
+                    <option value="patient">Patient</option>
+                    <option value="doctor">Doctor</option>
+                    <option value="admin">Admin</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <button type="submit" class="btn btn-signup btn-block">SignUp</button>
+        </form>
+        <div class="signup-link">
+            Already have an account? <a href="Login.html">Login</a>
+        </div>
+    </div>
+
+    <!-- Include jQuery and Bootstrap JS for better compatibility and functionality -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
